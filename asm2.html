@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ASM 2</title>
+
+</head>
+<body>
+    <h1>Class Marksheet</h1>
+    <h3 class="timerHeading">Current Time: <span id="timer">Now</span></h3>    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="inputField col-sm-12 col-md-12 col-lg-3 bg-info" >
+                <br>
+                <form action="">            
+                    <label for="name">Họ tên:</label><br>
+                    <input type="text" id="name" maxlength="25"><br>
+                    <label for="math">Điểm Toán:</label><br>
+                    <input type="number" id="math"><br>
+                    <label for="physical">Điểm Lý:</label><br>
+                    <input type="number" id="physical"><br>
+                    <label for="chemistry">Điểm Hóa:</label><br>
+                    <input type="number" id="chemistry"><br><br>
+                    <button type="button" onclick="inputData()">Nhập</button>
+                </form>
+                <br>
+            </div>
+            <br>
+            <div class="display col-sm-12 col-md-12 col-lg-9">
+                <table id="displayTable" class="table table-dark table-hover table-striped">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Toán</th>
+                        <th>Lý</th>
+                        <th>Hóa</th>
+                        <th>Trung bình</th>
+                        <th>Xếp loại</th>
+                        <th>Xóa sinh viên</th>
+                    </tr>                    
+                </table>
+                <br>
+                <button class="btnLeft" onclick="caculateAvg()">Tính điểm trung bình</button>
+                <button class="btnLeft" onclick="identifyGoodStudent()">Xác định học sinh giỏi</button>
+                <button class="btnLeft" onclick="insertionSort()">Sắp xếp điểm từ cao -> thấp</button>
+                <button class="btnLeft" onclick="reverseSort()">Quay lại STT DS ban đầu</button>
+                
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <div class="printField">
+        <button id="btnPrint" type="button" onclick="window.print()">Print Class Marksheet</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

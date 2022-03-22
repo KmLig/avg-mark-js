@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin: 40px auto;
+}    
+h3.timerHeading {
+    margin-left: 30px;
+}    
+h1, form{
+    text-align: center;
+    font-weight: bold;            
+}
+input{
+    width: 80%;
+}        
+table{
+    width: 90%;
+    border-spacing: 2px;
+    margin: 0 auto;  
+    border-collapse: collapse;                                
+}
+table, th, td{            
+    text-align: center;            
+}        
+button{
+    border-radius: 5px;    
+    transition: 0.6s;
+    transition-delay: 0.1s         
+}
+button:hover{
+    transform: scale(1.2);    
+    background: rgb(85, 219, 190);
+}
+button.btnDelete:hover {
+    background: red;
+}
+button.btnLeft, button#btnPrint{
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
